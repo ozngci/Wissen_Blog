@@ -46,6 +46,7 @@ namespace Blog.Web.Controllers
         public async Task<IActionResult> Add(AddBlogPostRequest addBlogPostRequest)
         {
 
+           
 
 
 
@@ -69,6 +70,7 @@ namespace Blog.Web.Controllers
             await blogPostManager.AddAsync(blogPost);
 
             return RedirectToAction("List", "AdminBlogPosts");
+            
         }
 
         [HttpGet]

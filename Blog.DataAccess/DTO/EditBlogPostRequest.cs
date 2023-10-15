@@ -35,7 +35,7 @@ namespace Blog.DataAccess.DTO
         public bool Visible { get; set; }
 
         // display tags
-
+        [Required]
         public IEnumerable<SelectListItem> Tags { get; set; }
 
         // collect tag

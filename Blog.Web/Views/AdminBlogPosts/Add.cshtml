@@ -12,63 +12,64 @@
         <div class="mb-3">
             <label class="form-label">Heading</label>
             <input class="form-control" type="text" id="heading" asp-for="Heading" required />
+            <span class="text-danger" asp-validation-for="Heading"></span>
             
         </div>
 
         <div class="mb-3">
             <label class="form-label">Page Title</label>
             <input class="form-control" type="text" id="pageTitle" asp-for="PageTitle" required />
-            
+            <span class="text-danger" asp-validation-for="PageTitle"></span>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Content</label>
             <textarea class="form-control" id="content" asp-for="Content" required></textarea>
-            
+            <span class="text-danger" asp-validation-for="Content"></span>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Short Description</label>
             <input class="form-control" type="text" id="shortDescription" asp-for="ShortDescription" required />
-            
+            <span class="text-danger" asp-validation-for="ShortDescription"></span>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Featured Image Upload</label>
             <input type="file" id="featuredImageUpload" class="form-control" required />
             <img src="" id="featuredImageDisplay" style="display:none;width:300px;" />
-
+            
         </div>
 
         <div class="mb-3">
             <label class="form-label">Featured Image URL</label>
             <input class="form-control" type="text" id="featuredImageUrl" asp-for="FeaturedImageUrl" required />
-            
+            <span class="text-danger" asp-validation-for="FeaturedImageUrl"></span>
         </div>
 
         <div class="mb-3">
             <label class="form-label">URL Handle</label>
             <input class="form-control" type="text" id="urlHandle" asp-for="UrlHandle" required />
-            
+            <span class="text-danger" asp-validation-for="UrlHandle"></span>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Published Date</label>
             <input class="form-control" type="date" id="publishedDate" asp-for="PublishedDate" required />
-            
+            <span class="text-danger" asp-validation-for="PublishedDate"></span>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Author</label>
             <input class="form-control" type="text" id="author" asp-for="Author" required />
-            
+            <span class="text-danger" asp-validation-for="Author"></span>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Tags</label>
             <select class="form-select" asp-items="@Model.Tags" asp-for="SelectedTags" required>
             </select>
-            
+            <span class="text-danger" asp-validation-for="SelectedTags"></span>
         </div>
 
         <div class="form-check mb-3">

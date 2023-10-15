@@ -81,6 +81,7 @@ namespace Blog.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(EditTagRequest editTagRequest)
         {
+            
             var tag = new Tag
             {
                 Id = editTagRequest.Id,
