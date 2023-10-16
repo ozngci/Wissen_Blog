@@ -67,8 +67,8 @@ namespace Blog.DataAccess.Contexts
             {
                 UserName = "superadmin@bloggie.com",
                 Email = "superadmin@bloggie.com",
-                NormalizedEmail = "superadmin@bloggie.com".ToUpper(),
-                NormalizedUserName = "superadmin@bloggie.com".ToUpper(),
+                NormalizedEmail = "SUPERADMIN@BLOGGIE.COM".ToUpper(),
+                NormalizedUserName = "SUPERADMIN@BLOGGIE.COM".ToUpper(),
                 Id = superAdminId
             };
 
