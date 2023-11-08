@@ -65,14 +65,14 @@ namespace Blog.DataAccess.Contexts
 
             var superAdminUser = new IdentityUser
             {
-                UserName = "superadmin@bloggie.com",
-                Email = "superadmin@bloggie.com",
-                NormalizedEmail = "SUPERADMIN@BLOGGIE.COM".ToUpper(),
-                NormalizedUserName = "SUPERADMIN@BLOGGIE.COM".ToUpper(),
+                UserName = "wissenadmin@wissen.com",
+                Email = "wissenadmin@wissen.com",
+                NormalizedEmail = "WISSENADMIN@WISSEN.COM".ToUpper(),
+                NormalizedUserName = "WISSENADMIN@WISSEN.COM".ToUpper(),
                 Id = superAdminId
             };
 
-            superAdminUser.PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(superAdminUser, "SuperAdmin@123");
+            superAdminUser.PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(superAdminUser, "WissenAdmin@123");
 
             builder.Entity<IdentityUser>().HasData(superAdminUser);
 
